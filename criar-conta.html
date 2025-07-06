@@ -3,19 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro de clientes</title>
+        <title>Criar conta</title>
     </head>
 
     <body>
         <a href="index.html">Voltar para pagina inicial</a>
     
-        <!--
-    nome ok
-    cpf ok
-    idade ok
-    numero para contato ok
-    endereço ok    
-    -->
        <form action="Crie-seu-cadastro" method="get">
 
             <h2>Dados Pessoais</h2>
@@ -34,10 +27,6 @@
 
             <label for="telefone-contato">Telefone</label>
             <input type="tel" required  name="telefone" id="telefone-contato">
-            <br>
-            <br>
-            <br>
-            <br>
             <br>
             <h2>Endereço</h2>
 
@@ -85,8 +74,23 @@
                     <option value="sergipe">SE - Sergipe</option>
                     <option value="tocantins">TO - Tocantins</option>
                 </select>
+                <br>
 
+            <input type="radio" name="moradia" id="campo-moradia-apartamento" value="apartamento">
+            <label for="campo-moradia-apartamento">Apartamento</label>
+            
+            <input type="radio" name="moradia" id="campo-moradia-casa" value="casa">
+            <label for="campo-moradia-casa">Casa</label>
 
+            <br>
+            <br>
+            <label for="campo-mail">E-mail</label>
+            <input type="email" required name="email" id="campo-email">
+            <br>
+            <label for="campo-senha">Senha</label>
+            <input type="password" required name="senha" id="campo-senha">
+
+            <br>
             <br>
             <br>
             <button type="submit">Cadastrar</button>
