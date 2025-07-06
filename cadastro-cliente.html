@@ -11,8 +11,96 @@
 
 
     <body>
+        <a href="index.html">Voltar para pagina inicial</a>
     
+        <!--
+    nome ok
+    cpf ok
+    idade ok
+    numero para contato ok
+    endereço ok    
+    -->
+       <form action="Crie-seu-cadastro" method="get">
+
+            <h2>Dados Pessoais</h2>
+
+            <label for="campo-nome">Nome</label>
+            <input type="text" required minlength="3" maxlength="20" name="nome" id="campo-nome">
+            <br>
+
+            <label for="campo-cpf">CPF</label>
+            <input type="text" required minlength="14" maxlength="14" name="cpf" id="campo-cpf">
+            <br>
+
+            <label for="campo-idade">Idade</label>
+            <input type="number" required min="14" max="120" name="idade" id="campo-idade">
+            <br>
+
+            <label for="telefone-contato">Telefone</label>
+            <input type="tel" required  name="telefone" id="telefone-contato">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Endereço</h2>
+
+
+            <label for="campo-rua">Rua</label>
+            <input type="text" required name="rua" id="campo-rua">
+
+            <label for="campo-numero-rua">Numero</label>
+            <input type="number" required name="numero" id="campo-numero-rua">
+
+            <label for="campo-cep">CEP</label>
+            <input type="text" required minlength="9" maxlength="9" name="cep" id="campo-cep">
+
+            <label for="campo-cidade">Cidade</label>
+            <input type="text" required name="cidade" id="campo-cidade">
+
+            <label for="estado">Estado:</label>
+                <select name="estado" required id="estado">
+                    <option value="">Selecione um estado</option>
+                    <option value="acre">AC - Acre</option>
+                    <option value="alagoas">AL - Alagoas</option>
+                    <option value="amapa">AP - Amapá</option>
+                    <option value="amazonas">AM - Amazonas</option>
+                    <option value="bahia">BA - Bahia</option>
+                    <option value="ceara">CE - Ceará</option>
+                    <option value="distrito-federal">DF - Distrito Federal</option>
+                    <option value="espirito-santo">ES - Espírito Santo</option>
+                    <option value="goias">GO - Goiás</option>
+                    <option value="maranhao">MA - Maranhão</option>
+                    <option value="mato-grosso">MT - Mato Grosso</option>
+                    <option value="mato-grosso-do-sul">MS - Mato Grosso do Sul</option>
+                    <option value="minas-gerais">MG - Minas Gerais</option>
+                    <option value="para">PA - Pará</option>
+                    <option value="paraiba">PB - Paraíba</option>
+                    <option value="parana">PR - Paraná</option>
+                    <option value="pernambuco">PE - Pernambuco</option>
+                    <option value="piaui">PI - Piauí</option>
+                    <option value="rio-de-janeiro">RJ - Rio de Janeiro</option>
+                    <option value="rio-grande-do-norte">RN - Rio Grande do Norte</option>
+                    <option value="rio-grande-do-sul">RS - Rio Grande do Sul</option>
+                    <option value="rondonia">RO - Rondônia</option>
+                    <option value="roraima">RR - Roraima</option>
+                    <option value="santa-catarina">SC - Santa Catarina</option>
+                    <option value="sao-paulo">SP - São Paulo</option>
+                    <option value="sergipe">SE - Sergipe</option>
+                    <option value="tocantins">TO - Tocantins</option>
+                </select>
+
+
+            <br>
+            <br>
+            <button type="submit">Cadastrar</button>
+
+
+
+
+       </form>
+        
     </body>
 
-    
+
 </html>
