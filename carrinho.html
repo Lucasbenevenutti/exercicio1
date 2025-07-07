@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrinho</title>
+    </head>
+
+    <body>
+        <a href="index.html">Voltar para pagina inicial</a>
+        <br>
+        <a href="produtos.html">Voltar a lista de produtos</a>
+
+        <br>
+        <br>
+        <br>
+        <h2>Escolha a forma de pagamento</h2>
+
+        <form action="carrinho" method="get">
+            <input type="radio" required name="compra" id="compra-cartao-credito" value="credito">
+            <label for="compra-cartao-credito">Credito</label>
+            
+            <input type="radio" required name="compra" id="compra-cartao-debito" value="debito">
+            <label for="compra-cartao-debito">Debito</label>
+
+            <input type="radio" required name="compra" id="compra-pix" value="pix">
+            <label for="compra-pix">Pix</label>
+
+            <br>
+            <br>
+            <button type="submit">Pagar</button>
+        </form>
+    </body>
+</html>
